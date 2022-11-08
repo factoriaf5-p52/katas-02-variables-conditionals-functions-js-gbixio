@@ -5,6 +5,11 @@ describe("Variables en JS", () => {
     it("Completa todas las constantes que faltan", () => {
 
         const a = 10;
+        const b = 1.34;
+        const c = true;
+        const d = "Buenos días";
+        const e = "Pepe";
+        const f = "Buenos días, pepe";
 
         expect(a).to.equal(10);
         expect(b).to.equal(1.34);

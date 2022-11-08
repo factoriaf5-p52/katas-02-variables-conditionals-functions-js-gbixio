@@ -26,9 +26,9 @@ describe("Variables en JS", () => {
         let c = 10;
         let d = -341;
         let e = -1;
-        let f = 1000;
-        let g = 1;
-        let x = 0;
+        let f = 10;
+        let g = 3;
+        let x = 2;
         let y = 1;
 
         expect(a + b).to.equal(11.34);
@@ -43,7 +43,13 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que se cumplan las condiciones", () => {
 
         let a = 10;
+        let b = 100;
+        let c; // let c = undefined
+        let d = 10;
+        let n = "ña"
 
+
+      
         expect(a > 9).to.be.true;
         expect(a < 11).to.be.true;
         expect(b === 100).to.be.true;
@@ -61,12 +67,11 @@ describe("condicionales en javascript", () => {
         let result = "KO";
 
         // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length
-        if (name.length === 6) {
-            result = "OK"
-        }
-
+       if (name.lenght=== 6) {
+        result = "OK"
+       }
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "KO").to.be.true;
     })
 
     it("comparando cadenas (strings)", () => {
@@ -82,7 +87,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "pikachu").to.be.true;
     })
 
     it("Interpolación de cadenas (strings) (1)", () => {
@@ -99,7 +104,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Pizza con " + m).to.be.true;
     })
 
     it("Interpolación de cadenas (strings) (2)", () => {
@@ -116,7 +121,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === `Pizza con Piña`).to.be.true;
     })
 })
 
@@ -150,7 +155,7 @@ describe("Funciones en JS", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === 28).to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (2)", () => {
@@ -159,16 +164,16 @@ describe("Funciones en JS", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === `Son Pinky y Cerebro`).to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (3)", () => {
 
         // substituye "???" por el resultado en cada caso
-        expect(h("khaleesi mother of dragons breaker of chains") === "???").to.be.true;
-        expect(h("sarah") === "???").to.be.true;
-        expect(h("bob") === "???").to.be.true;
-        expect(h("robertson") === "???").to.be.true;
+        expect(h("khaleesi mother of dragons breaker of chains") === "very long").to.be.true;
+        expect(h("sarah") === "adecquate").to.be.true;
+        expect(h("bob") === "too short").to.be.true;
+        expect(h("robertson") === "long").to.be.true;
     })
 
 })

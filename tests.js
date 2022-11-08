@@ -22,6 +22,14 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que las operaciones resulten correctamente", () => {
 
         let a = 11;
+        let b = 0.34;
+        let c = 10;
+        let d = -341;
+        let e = -1;
+        let f = 1000;
+        let g = 1;
+        let x = 0;
+        let y = 1;
 
         expect(a + b).to.equal(11.34);
         expect(a * c).to.equal(110);
